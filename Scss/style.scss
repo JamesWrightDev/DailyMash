@@ -1,5 +1,4 @@
-
-
+//test
 @function col-width($col-items){
 	@return  $wrapper-width / $col-max * $col-items
 };
@@ -7,6 +6,8 @@
 
 
 $color-primary: #184B84;
+$color-body: #f9f9f9;
+
 
 $wrapper-width: 100%;
 
@@ -16,20 +17,27 @@ $serif-font: 'Roboto Slab', serif;
 $sans-serif-font:'Roboto', sans-serif;
 
 
+
+
+
 // Fonts
 
 h3 {
 	font-family: $serif-font;
 	font-weight: 800;
 	color: $color-primary;	
-	font-size: 1.5em;
+	font-size: 1em;
 	margin: 0 0  5px 0;
+	@media (min-width: 626px) {
+		font-size: 1.5em;	
+		line-height: 1.5;
+	}
 }
 
 .date {
 	font-family: $sans-serif-font;
 	font-weight: 300;
-	margin: 0;
+	margin-top: 15px;
 	font-size: 0.6em;
 	color: grey;
 }
@@ -37,13 +45,15 @@ h3 {
 @mixin flex-box {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: flex-start;
 	
 }
 
 body {
-	background-color: lightgrey;
+	background-color: $color-body;
+		min-width: 326px;
+
 }
 
 
@@ -58,6 +68,7 @@ body {
 	top: 0;
 	display: flex;
 	transition: 0.2s;
+	border-bottom: solid 1px #ddd;
 
 }
 
@@ -66,6 +77,7 @@ body {
 	height: 100px;
 	margin: 0 auto;
 	width: 100px;
+
 }
 
 .floatingNav {
@@ -80,6 +92,7 @@ body {
 .wrapper {
 	width: $wrapper-width;
 	max-width: 900px;
+	min-width: 326px;
 	margin: auto;
 	background-color: white;
 	margin-top: 100px;
@@ -92,15 +105,20 @@ body {
 }
 
 .card{
-	margin: 10px 0;
-	height: 90px;
-	margin: 10px 40px,
+	
+	margin: 15px 20px;
+	min-width: 326px;
+	@media (min-width: 626px){
+		margin: 15px 10%;
+	}
 
 }
 
 .card img {
-	width: 90px;
-	height: 90px;
+	max-width: 100%;
+	max-height: 100%;
+	
+	
 }
 
 .header img {
@@ -128,7 +146,7 @@ body {
 .grid__col--8 {
 	
 	width: col-width(8);
-	flex-grow: 1;
+	flex-grow: 0;
 
 }
 
