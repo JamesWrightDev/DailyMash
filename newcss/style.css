@@ -1,3 +1,6 @@
+html {
+  font: arial; }
+
 h3 {
   font-family: "Roboto Slab", serif;
   font-weight: 800;
@@ -88,10 +91,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 58.3333333333%; }
+  width: 58.33333%; }
 
 .grid__col--8 {
-  width: 66.6666666667%;
+  width: 66.66667%;
   flex-grow: 0; }
 
 .grid__col--6 {
@@ -106,10 +109,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 41.6666666667%; }
+  width: 41.66667%; }
 
 .grid__col--4 {
-  width: 33.3333333333%; }
+  width: 33.33333%; }
 
 .grid__col--3 {
   display: flex;
@@ -117,5 +120,3 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 25%; }
-
-/*# sourceMappingURL=style.css.map */

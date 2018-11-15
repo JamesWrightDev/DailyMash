@@ -1,11 +1,13 @@
+// NEW VERSION
+
 //test
 @function col-width($col-items){
 	@return  $wrapper-width / $col-max * $col-items
 };
 
 
-
 $color-primary: #184B84;
+// $color-primary: #184B84;
 $color-body: #f9f9f9;
 
 
@@ -19,7 +21,9 @@ $sans-serif-font:'Roboto', sans-serif;
 
 
 
-
+html{
+	font: arial;
+}
 // Fonts
 
 h3 {

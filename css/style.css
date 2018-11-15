@@ -1,3 +1,122 @@
+html {
+  font: arial; }
 
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  color: #184B84;
+  font-size: 1em;
+  margin: 0 0  5px 0; }
+  @media (min-width: 626px) {
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.5; } }
 
-/*# sourceMappingURL=style.css.map */
+.date {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-top: 15px;
+  font-size: 0.6em;
+  color: grey; }
+
+.article {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #1e1e1e; }
+
+.article--head {
+  margin: 50px 0;
+  font-size: 2em; }
+
+body {
+  background-color: #f9f9f9;
+  min-width: 326px; }
+
+#navbar {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  height: 100px;
+  top: 0;
+  display: flex;
+  transition: 0.2s;
+  border-bottom: solid 1px #ddd; }
+
+#navbar img {
+  height: 100px;
+  margin: 0 auto;
+  width: 100px; }
+
+.floatingNav {
+  width: calc(100vh - 100px);
+  border-radius: 2px;
+  box-shadow: 0px 1px 10px #999; }
+
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+  min-width: 326px;
+  margin: auto;
+  background-color: white;
+  margin-top: 100px; }
+
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.card {
+  margin: 15px 12.5%;
+  min-width: 326px; }
+  @media (min-width: 626px) {
+    .card {
+      margin: 15px 10%; } }
+
+.card img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.header img {
+  width: 100%;
+  max-width: 500px; }
+
+.grid__col--12 {
+  width: 100%; }
+
+.grid__col--7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 58.33333%; }
+
+.grid__col--8 {
+  width: 66.66667%;
+  flex-grow: 0; }
+
+.grid__col--6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%; }
+
+.grid__col--5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 41.66667%; }
+
+.grid__col--4 {
+  width: 33.33333%; }
+
+.grid__col--3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 25%; }
