@@ -1,0 +1,50 @@
+.wrapper {
+	width: $wrapper-width;
+	max-width: 900px;
+	min-width: 326px;
+	margin: auto;
+	background-color: white;
+	margin-top: 100px;
+	
+}
+
+.grid-row {
+	@include flex-box;
+	
+}
+
+@function col-width($col-items){
+	@return  $wrapper-width / $grid-col_max * $col-items
+};
+
+.grid__col--12 {
+	width: 100%;
+
+}
+.grid__col--7 {
+	@include flex-box;
+	width: col-width(7);
+}
+.grid__col--8 {
+	width: col-width(8);
+	flex-grow: 0;
+}
+
+.grid__col--6 {
+	@include flex-box;
+	width: col-width(6);
+}
+
+.grid__col--5 {
+	@include flex-box;
+	width: col-width(5);
+}
+
+
+.grid__col--4 {
+	width: col-width(4);
+}
+.grid__col--3 {
+	@include flex-box;
+	width: col-width(3);
+}

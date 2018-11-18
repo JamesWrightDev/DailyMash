@@ -1,3 +1,42 @@
 /**
  * Basic typography style for copy text
  */
+ h3 {
+	font-family: $serif-font;
+	font-weight: 800;
+	color: $color-primary;	
+	font-size: 1em;
+	margin: 0 0  5px 0;
+		@media (min-width: 626px) {
+			font-size: 1.5em;	
+			line-height: 1.5;
+		}
+}
+
+.article {
+	font-family: $sans-serif-font;
+	line-height: 1.8;
+	font-weight: 300;
+	color: #1e1e1e;
+
+}
+
+.date {
+	font-family: $sans-serif-font;
+	font-weight: 300;
+	margin-top: 15px;
+	font-size: 0.6em;
+	color: grey;
+}
+.article {
+	font-family: $sans-serif-font;
+	line-height: 1.8;
+	font-weight: 300;
+	color: #1e1e1e;
+
+}
+
+.article--head {
+	margin: 50px 0;
+	font-size: 2em;
+}

@@ -1,3 +1,24 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.card{
+	
+	margin: 15px 12.5%;
+	min-width: 326px;
+	@media (min-width: 626px){
+		margin: 15px 10%;
+	}
+
+}
+
+.card img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.header img {
+	width: 100%;
+	max-width: 500px;
+}
+
