@@ -9,42 +9,23 @@
 }
 
 .grid-row {
-	@include flex-box;
-	
+	@include flex-box;	
 }
 
-@function col-width($col-items){
-	@return  $wrapper-width / $grid-col_max * $col-items
+@function col-width($grid-col__items){
+	@return  $wrapper-width / $grid-col__max * $grid-col__items
 };
 
-.grid__col--12 {
-	width: 100%;
 
+@for $i from 1 through $grid-col__max{
+	.grid-col__#{$i}{
+		@include flex-box;
+		width: col-width($i);
+		
+	}
 }
-.grid__col--7 {
-	@include flex-box;
-	width: col-width(7);
-}
-.grid__col--8 {
-	width: col-width(8);
-	flex-grow: 0;
-}
-
-.grid__col--6 {
-	@include flex-box;
-	width: col-width(6);
+.grid-flex__column{
+	display: flex;
+	flex-direction: column;
 }
 
-.grid__col--5 {
-	@include flex-box;
-	width: col-width(5);
-}
-
-
-.grid__col--4 {
-	width: col-width(4);
-}
-.grid__col--3 {
-	@include flex-box;
-	width: col-width(3);
-}
