@@ -17,18 +17,24 @@
 }
 
 .header img {
-	width: 100%;
+	width: 100vw;
 	max-width: 500px;
 }
 .header{
-	position: relative;
+	display: block;
+	height: 400px;
 }
 .header--text{
 	background-color: white;
-	position: absolute;
-	top: 10%;
-	left: 90%;
-	width: 80%;
+	position: relative;
+	top: -275px;
+	left: 300px;
+	width: 400px;
 	padding: 20px;
+	@media (max-width: 626px){
+		top: -50px;
+		left: 20px;
+		width: 250px;
+	}
 
 }
